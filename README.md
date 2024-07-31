@@ -29,8 +29,8 @@ To run this project, you need a modern web browser with JavaScript enabled.
 ## Files
 
 - `index.html`: The main HTML file containing the structure of the page.
-- `index.css`: The CSS file for styling the page.
-- `index.js`: The JavaScript file containing the game logic.
+- `stylsheet.css`: The CSS file for styling the page.
+- `script.js`: The JavaScript file containing the game logic.
 
 ## Code Overview
 
