@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(127, 143, 143);
+}
+
+#plinkoCanvas{
+    background-color: black;
+}
+#add-ball{
+   
+    top:10px;
+    right: 10px;
+    background-color: #0f0;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+#sink-text {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+#container{
+     width: 40%;
+     height: 100vh;
+     margin: 0 auto;
+     display: flex;
+     justify-content: space-around;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+@media (max-width: 777px){
+    #container{
+        width: 80%;
+    }
+}
+@media (max-width: 449px){
+    #container{
+        width: 80%;
+    }
+}
