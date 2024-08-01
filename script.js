@@ -1,5 +1,6 @@
 const canvas = document.getElementById("plinkoCanvas");
 const ctx = canvas.getContext("2d");
+// canvas.style.backgroundColor = "black";
 
 const DECIMAL_MULTIPLIER = 10000;
 
@@ -103,11 +104,11 @@ class Ball {
 
 // !! Initializing the balls
 
-const initialBall = new Ball(pad(WIDTH / 2 + 23), pad(50), ballRadius, 'red');
+const initialBall = new Ball(pad(WIDTH / 2 + 23), pad(50), ballRadius, 'yellow');
 balls.push(initialBall);
 
 function drawObstacles() {
-    ctx.fillStyle = 'white';
+    ctx.fillStyle = 'yellow';
     obstacles.forEach(obstacle => {
         ctx.beginPath();
         ctx.arc(unpad(obstacle.x), unpad(obstacle.y), obstacle.radius, 0, Math.PI * 2);
@@ -120,10 +121,10 @@ function drawSinks() {
     for (let i = 0; i < sinks.length; i++) {
         const sink = sinks[i];
 
-        ctx.fillStyle = 'green';
+        ctx.fillStyle = 'yellow';
         ctx.fillRect(sink.x, sink.y - sink.height / 2, sink.width - obstacleRadius * 2, sink.height);
 
-        ctx.fillStyle = 'white';
+        ctx.fillStyle = 'black';
         ctx.font = '16px Arial';
         const text = sink.text.toString();
         const textWidth = ctx.measureText(text).width;
@@ -134,7 +135,7 @@ function drawSinks() {
 }
 
 function addBall() {
-    const newBall = new Ball(pad(WIDTH / 2 + 13), pad(50), ballRadius, 'red');
+    const newBall = new Ball(pad(WIDTH / 2 + 13), pad(50), ballRadius, 'yellow');
     balls.push(newBall);
 }
 
